@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Booking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">🛠️ ServiceApp</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="https://www.urbancompany.com/near-me/washing-machine-repair-near-me">Services</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Washing_machine">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="user-info">
+      <span class="username">Welcome, User</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="left-section">
+      <h2>Added Items</h2>
+      <ul id="cart-list">
+        <li>No items added yet.</li>
+      </ul>
+      <p>Total Amount: ₹<span id="total-amount">0</span></p>
+
+      <div class="booking-form">
+        <h2>Book Now</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <h2>Browse Our Services</h2>
+      <p>Explore and select from our available services below:</p>
+
+      <div class="services" id="services">
+        <div class="service">
+          <img src="https://th.bing.com/th/id/OIP.CHrbs1TmjLkiKsru-wz4OgHaJE?w=151&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Service 1">
+          <h3>Cleaning Service</h3>
+          <p>Price: ₹500</p>
+          <button class="skip-btn">Skip Item</button>
+          <button class="add-btn" data-name="Cleaning Service" data-price="500">Add Item</button>
+        </div>
+
+        <div class="service">
+          <img src="https://th.bing.com/th?q=Washing+Machine+Repair+Man+Cartoon&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Service 2">
+          <h3>Repair Service</h3>
+          <p>Price: ₹800</p>
+          <button class="skip-btn">Skip Item</button>
+          <button class="add-btn" data-name="Repair Service" data-price="800">Add Item</button>
+        </div>
+      </div>
+
+      <div class="cart-options">
+        <p>You can add items to your cart and book them.</p>
+        <button id="add-to-cart">Add to Cart</button>
+        <button id="book-now">Book Now</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

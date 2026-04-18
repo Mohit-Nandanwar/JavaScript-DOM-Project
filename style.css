@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  margin: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.services {
+  display: flex;
+  gap: 20px;
+}
+
+.service {
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service img {
+  width: 100px;
+  height: 100px;
+}
+
+.add-btn, .skip-btn {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-options {
+  margin-top: 20px;
+}
+
+.booking-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.booking-form button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius:8px;
+}
+.booking-form button:hover{
+    box-shadow: 0 0 15px greenyellow;
+    background: rgb(43, 161, 10);
+    transform: scale(1.1);
+    
+}
+
